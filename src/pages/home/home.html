@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="titulo">
+      <h1>{{title}}</h1>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <h2 class="titulo">My favorite hero is: {{myHero}}</h2>
+  
+  <p class="titulo">Heroes:</p>
+
+  <button ion-button *ngFor="let hero of heroes; let i = index" block (click)="cambiarHeroe(i)">
+
+    
+      {{ hero }}
+
+   </button>
+
+ 
 </ion-content>
