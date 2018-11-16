@@ -1,0 +1,7 @@
+{
+  "name": "ngFor",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
